@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evenza</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Cookie&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="box">
+      <!-- navbar -->
+      <nav
+        id="navBar"
+        class="navbar navbar-expand-lg position-fixed w-100 z-3 bg-white"
+        data-bs-theme="light"
+      >
+        <div class="container-fluid">
+          <!-- ICON -->
+          <!-- <a class="logo fs-3" href="#"
+              ><i class="fa-solid fa-film" style="color: cornflowerblue"></i
+            ></a> -->
+          <a class="navbar-brand text-dark fs-2 ms-2" href="#"
+            ><span class="fw-semibold glow">E</span>venza</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav my-auto my-lg-0 navbar-nav-scroll mx-auto d-flex justify-content-center gap-4"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  id="home-tab"
+                  class="nav-link dropdown text-dark fs-5"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropend">
+                    <a
+                      class="dropdown-item dropdown"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Featured List
+                    </a>
+                    <ul class="dropdown-menu ps-50">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Top 250 Narrative Feature Films</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >One Million Watched Club</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Top 100 Animated Feature Films</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item tabs" href="#">Popular This Week</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item tabs" href="#">Crew List</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown text-dark fs-5 tabs"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Top 250 Movies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Popular This Week</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Top Box Office</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown text-dark fs-5 tabs"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">TV news</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Browse TV shows by genre</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Most Popular TV</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown text-dark fs-5 tabs"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Events
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Top 250 Movies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Popular This Week</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Top Box Office</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown text-dark fs-5 tabs"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Top 250 Movies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Popular This Week</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Top Box Office</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide carousel-fade"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/slide1.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="position-absolute top-50 start-50 translate-middle text-white"
+            >
+              <h1
+                class="animate__animated animate__slideInLeft text-center slidetext"
+              >
+                <span class="glow">CRAFTING</span> YOUR <br />
+                DREAM EVENTS
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/slide2.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="position-absolute top-50 start-50 translate-middle text-white"
+            >
+              <h1
+                class="animate__animated animate__slideInLeft text-uppercase text-center slidetext"
+              >
+                <span class="glow">Making</span> your <br />dream a reality
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="position-absolute top-50 start-50 translate-middle text-white"
+            >
+              <h1
+                class="animate__animated animate__slideInLeft text-uppercase text-center slidetext"
+              >
+                <span class="glow">Your</span> Wedding Planner
+              </h1>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="featured-wedding">
+        <div class="container">
+          <h2 class="fs-1">FEATURED EVENTS</h2>
+          <div class="d-flex align-items-center justify-content-start gap-3">
+            <h6>UPCOMING EVENTS</h6>
+            <hr class="flex-grow-1 border border-dark border-1" />
+          </div>
+          <div class="row mt-5">
+            <div class="col d-flex flex-column gap-4 cards">
+              <div class="position-relative">
+                <img
+                  class="img-fluid"
+                  src="./images/featuredEvent1.jpg"
+                  alt="wedding"
+                />
+                <div class="eventCards">
+                  <div
+                    class="circle h-75 w-75 rounded-circle text-center position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h4 class="text-white">WEDDING EVENT</h4>
+                    <div>
+                      <i class="fa-solid fa-magnifying-glass text-white"></i>
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex flex-column gap-4 cards">
+              <div class="position-relative">
+                <img
+                  class="img-fluid"
+                  src="./images/event-decoration.jpg"
+                  alt="wedding"
+                />
+                <div class="eventCards">
+                  <div
+                    class="circle h-75 w-75 rounded-circle text-center position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h4 class="text-white">EVENT DECORATION</h4>
+                    <div>
+                      <i class="fa-solid fa-magnifying-glass text-white"></i>
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex flex-column gap-4 cards">
+              <div class="position-relative">
+                <img
+                  class="img-fluid"
+                  src="./images/outdoor-events.jpg"
+                  alt="wedding"
+                />
+                <div class="eventCards">
+                  <div
+                    class="circle h-75 w-75 rounded-circle text-center position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h4 class="text-white">OUTDOOR EVENT</h4>
+                    <div>
+                      <i class="fa-solid fa-magnifying-glass text-white"></i>
+                      <i class="fa-solid fa-plus text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <h2 class="fs-1">WHY CHOOSE US</h2>
+            <div
+              class="rmore py-2 px-3 d-flex align-items-center justify-content-center"
+            >
+              <span class="text-white">READ MORE</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-start gap-3">
+            <h6>CHOOSE US</h6>
+            <hr class="flex-grow-1 border border-dark border-1" />
+          </div>
+          <div class="row p-5">
+            <div class="col text-center w-100 h-100">
+              <img class="img-fluid w-50" src="./images/camera.png" alt="" />
+              <h4><br />PHOTOGRAPHER</h4>
+            </div>
+            <div class="col text-center w-100 h-100">
+              <img class="img-fluid w-50" src="./images/register.png" alt="" />
+              <h4><br />REGISTRY</h4>
+            </div>
+            <div class="col text-center w-100 h-100">
+              <img class="img-fluid w-50" src="./images/gown.png" alt="" />
+              <h4><br />WEDDING GOWNS</h4>
+            </div>
+            <div class="col text-center w-100 h-100">
+              <img class="img-fluid w-50" src="./images/makeup.png" alt="" />
+              <h4><br />MAKEUP ARTIST</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lets-plan-next-event">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="row g-0">
+                <div class="col d-flex flex-column">
+                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                    <img
+                      class="img-fluid"
+                      src="./images/entertainment.png"
+                      alt="guitar"
+                    />
+                    <h6><br />Entertainment</h6>
+                  </div>
+
+                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                    <img
+                      class="img-fluid"
+                      src="./images/dinning.png"
+                      alt="dining"
+                    />
+                    <h6><br />Dining</h6>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column">
+                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                    <img
+                      class="img-fluid"
+                      src="./images/decor.png"
+                      alt="decor"
+                    />
+                    <h6><br />Decor</h6>
+                  </div>
+
+                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                    <img
+                      class="img-fluid"
+                      src="./images/gifting.png"
+                      alt="gift"
+                    />
+                    <h6><br />Gifting</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col d-flex align-items-center justify-content-center text-center"
+            >
+              <h1>
+                LET'S PLAN YOUR NEXT <br />
+                EVENT TOGETHER
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h4>About Evenza</h4>
+              <h1><br />WHAT WE DO, WE DO<br />WITH PASSION <br /></h1>
+              <div
+                class="rmore py-2 px-3 d-flex align-items-center justify-content-center"
+              >
+                <span class="text-white">READ MORE</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <img
+                class="img-fluid border border-5 border-body-tertiary aboutImg"
+                src="./images/about-img1.jpg"
+                alt="abtImg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bgEffect d-flex align-items-center justify-content-center"
+      >
+        <h1 class="text-white">PERFECT WEDDINGS MADE EASY!</h1>
+      </section>
+      <!-- news -->
+      <section class="news">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <h2 class="fs-1">OUR LATEST NEWS</h2>
+            <div
+              class="rmore py-2 px-3 d-flex align-items-center justify-content-center"
+            >
+              <span class="text-white">READ BLOG</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-start gap-3">
+            <h6>OUR BLOG</h6>
+            <hr class="flex-grow-1 border border-dark border-1" />
+          </div>
+          <div class="row mt-5 g-4">
+            <div class="col-md-4 col-sm-6">
+              <div class="newsCards position-relative">
+                <img
+                  class="newsImg"
+                  src="./images/wedding1.jpg"
+                  alt="wedding"
+                />
+                <div class="position-absolute top-0 start-0 p-3">
+                  <span
+                    class="text-uppercase text-white fw-semibold fs-4 newstext"
+                    >Wedding</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="newsCards position-relative">
+                <img class="newsImg" src="./images/event.jpg" alt="wedding" />
+                <div class="position-absolute top-0 start-0 p-2">
+                  <span
+                    class="text-uppercase text-white fw-semibold fs-4 newstext"
+                    >Events</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="newsCards position-relative">
+                <img
+                  class="newsImg"
+                  src="./images/wedding2.jpg"
+                  alt="wedding"
+                />
+                <div class="position-absolute top-0 start-0 p-2">
+                  <span
+                    class="text-uppercase text-white fw-semibold fs-4 newstext"
+                    >Wedding</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="bg-dark text-white">
+        <div class="row d-flex gap-3 p-5">
+          <div class="col">
+            <h2 class="mt-5 fs-1">
+              <span class="fw-semibold glow">E</span>VENZA
+            </h2>
+            <h4 class="mt-5 glow">OUR ADDRESS</h4>
+            <p>280 Granite Run Drive Suite Hobert, LA 90010</p>
+            <h4 class="mt-5 glow">CONTACT INFO</h4>
+            <p>evenza@gmail.com <br /><span class="fs-5">+91 12345678</span></p>
+          </div>
+          <div class="col">
+            <div class="row">
+              <h3 class="mt-5 text-uppercase">
+                Subscribe to our newsletter!<br />always in touch!
+              </h3>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="mt-3 text-uppercase glow">Useful Links</h4>
+                <ul class="text-uppercase list-unstyled list">
+                  <li class="text-hover">Home</li>
+                  <br />
+                  <li class="text-hover">About Us</li>
+                  <br />
+                  <li class="text-hover">History</li>
+                  <br />
+                  <li class="text-hover">Blog</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4 class="mt-3 text-uppercase glow">Services</h4>
+                <ul class="text-uppercase list-unstyled list">
+                  <li class="text-hover">Wedding</li>
+                  <br />
+                  <li class="text-hover">Catering</li>
+                  <br />
+                  <li class="text-hover">Decoration</li>
+                  <br />
+                  <li class="text-hover">Music Event</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <form>
+              <input
+                class="mt-5 pt-3 emailBox"
+                type="email"
+                placeholder="Enter your email..."
+              />
+              <hr class="w-75" />
+            </form>
+            <h4 class="mt-4 pt-2 text-uppercase glow">Follow Us</h4>
+            <div class="row d-flex justify-content-end">
+              <a
+                data-bs-toggle="tooltip"
+                data-bs-title="Facebook"
+                class="text-hover fs-4 text-white"
+                href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                data-bs-toggle="tooltip"
+                data-bs-title="Instagram"
+                class="text-hover fs-4 text-white"
+                href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                data-bs-toggle="tooltip"
+                data-bs-title="Twitter"
+                class="text-hover fs-4 text-white"
+                href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+</html>
