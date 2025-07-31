@@ -11,6 +11,8 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- GFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -273,8 +275,9 @@
             <hr class="flex-grow-1 border border-dark border-1" />
           </div>
           <div class="row mt-5">
-            <div class="col d-flex flex-column gap-4 cards">
-              <div class="position-relative">
+            <div  class="col d-flex flex-column gap-4 cards">
+              <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="800" class="position-relative">
                 <img
                   class="img-fluid"
                   src="./images/featuredEvent1.jpg"
@@ -294,7 +297,8 @@
               </div>
             </div>
             <div class="col d-flex flex-column gap-4 cards">
-              <div class="position-relative">
+              <div data-aos="fade-down"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="800" class="position-relative">
                 <img
                   class="img-fluid"
                   src="./images/event-decoration.jpg"
@@ -314,7 +318,8 @@
               </div>
             </div>
             <div class="col d-flex flex-column gap-4 cards">
-              <div class="position-relative">
+              <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="800" class="position-relative">
                 <img
                   class="img-fluid"
                   src="./images/outdoor-events.jpg"
@@ -377,7 +382,8 @@
             <div class="col">
               <div class="row g-0">
                 <div class="col d-flex flex-column">
-                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                  <div data-aos="fade-right"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="w-100 h-100 text-center p-3 lets-plan">
                     <img
                       class="img-fluid"
                       src="./images/entertainment.png"
@@ -386,7 +392,8 @@
                     <h6><br />Entertainment</h6>
                   </div>
 
-                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                  <div data-aos="fade-down"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="w-100 h-100 text-center p-3 lets-plan">
                     <img
                       class="img-fluid"
                       src="./images/dinning.png"
@@ -395,7 +402,8 @@
                     <h6><br />Dining</h6>
                   </div>
                 </div>
-                <div class="col d-flex flex-column">
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="col d-flex flex-column">
                   <div class="w-100 h-100 text-center p-3 lets-plan">
                     <img
                       class="img-fluid"
@@ -405,7 +413,8 @@
                     <h6><br />Decor</h6>
                   </div>
 
-                  <div class="w-100 h-100 text-center p-3 lets-plan">
+                  <div data-aos="fade-left"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="w-100 h-100 text-center p-3 lets-plan">
                     <img
                       class="img-fluid"
                       src="./images/gifting.png"
@@ -471,7 +480,8 @@
           </div>
           <div class="row mt-5 g-4">
             <div class="col-md-4 col-sm-6">
-              <div class="newsCards position-relative">
+              <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="newsCards position-relative">
                 <img
                   class="newsImg"
                   src="./images/wedding1.jpg"
@@ -486,7 +496,8 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="newsCards position-relative">
+              <div data-aos="fade-down"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="newsCards position-relative">
                 <img class="newsImg" src="./images/event.jpg" alt="wedding" />
                 <div class="position-absolute top-0 start-0 p-2">
                   <span
@@ -497,7 +508,8 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
-              <div class="newsCards position-relative">
+              <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="newsCards position-relative">
                 <img
                   class="newsImg"
                   src="./images/wedding2.jpg"
@@ -597,6 +609,10 @@
       </footer>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
