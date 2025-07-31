@@ -11,6 +11,11 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- Animate.css -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- AOS -->
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- GFonts -->
@@ -358,20 +363,20 @@
           </div>
           <div class="row p-5">
             <div class="col text-center w-100 h-100">
-              <img class="img-fluid w-50" src="./images/camera.png" alt="" />
-              <h4><br />PHOTOGRAPHER</h4>
+              <img class="img-fluid w-50 animate__animated animate__flash animate__infinite" style="--animate-duration: 1.8s;" src="./images/camera.png" alt="" />
+              <h5><br />PHOTOGRAPHER</h5>
             </div>
             <div class="col text-center w-100 h-100">
-              <img class="img-fluid w-50" src="./images/register.png" alt="" />
-              <h4><br />REGISTRY</h4>
+              <img  class="img-fluid w-50 animate__animated animate__flipInX animate__infinite" style="--animate-duration: 1.8s;" src="./images/register.png" alt="" />
+              <h5><br />REGISTRY</h5>
             </div>
             <div class="col text-center w-100 h-100">
-              <img class="img-fluid w-50" src="./images/gown.png" alt="" />
-              <h4><br />WEDDING GOWNS</h4>
+              <img class="img-fluid w-50 animate__animated animate__flipInY animate__infinite" style="--animate-duration: 1.8s;" src="./images/gown.png" alt="" />
+              <h5><br />WEDDING GOWNS</h5>
             </div>
             <div class="col text-center w-100 h-100">
-              <img class="img-fluid w-50" src="./images/makeup.png" alt="" />
-              <h4><br />MAKEUP ARTIST</h4>
+              <img class="img-fluid w-50 animate__animated animate__flipInX animate__infinite" style="--animate-duration: 1.8s;" src="./images/makeup.png" alt="" />
+              <h5><br />MAKEUP ARTIST</h5>
             </div>
           </div>
         </div>
@@ -430,7 +435,7 @@
             >
               <h1>
                 LET'S PLAN YOUR NEXT <br />
-                EVENT TOGETHER
+                <span class="glow">EVENT</span> TOGETHER
               </h1>
             </div>
           </div>
@@ -439,21 +444,32 @@
       <section class="about">
         <div class="container">
           <div class="row">
-            <div class="col-6">
-              <h4>About Evenza</h4>
-              <h1><br />WHAT WE DO, WE DO<br />WITH PASSION <br /></h1>
+            <div class="col-7 mt-5\">
+              <h4><br><br><br>About Evenza</h4>
+              <h1 class="mt-5"><br />WHAT WE DO, WE DO<br />WITH PASSION <br /></h1>
               <div
                 class="rmore py-2 px-3 d-flex align-items-center justify-content-center"
               >
                 <span class="text-white">READ MORE</span>
               </div>
             </div>
-            <div class="col-6">
+            <div class="py-4 mt-5 col-5 position-relative">
               <img
-                class="img-fluid border border-5 border-body-tertiary aboutImg"
+                 data-aos="zoom-in-left"
+                  data-aos-duration="1000"
+                class="img-fluid border border-5 border-body-tertiary aboutImg2 position-absolute z-2 "
+                src="./images/about-img2.jpg"
+                style="bottom: -120px; left: -90px;"
+                alt="abtImg"
+              />
+              <img
+                data-aos="zoom-in-right"
+                  data-aos-duration="1000"
+                class="img-fluid border border-5 border-body-tertiary aboutImg1 w-75 position-absolute start-25 top-25 "
                 src="./images/about-img1.jpg"
                 alt="abtImg"
               />
+              
             </div>
           </div>
         </div>
@@ -461,7 +477,8 @@
       <section
         class="bgEffect d-flex align-items-center justify-content-center"
       >
-        <h1 class="text-white">PERFECT WEDDINGS MADE EASY!</h1>
+        <h1 data-aos="zoom-out-up"
+      data-aos-duration="1500" class="text-white">PERFECT WEDDINGS MADE EASY!</h1>
       </section>
       <!-- news -->
       <section class="news">
@@ -487,7 +504,7 @@
                   src="./images/wedding1.jpg"
                   alt="wedding"
                 />
-                <div class="position-absolute top-0 start-0 p-3">
+                <div class="position-absolute bottom-0 start-0 p-3">
                   <span
                     class="text-uppercase text-white fw-semibold fs-4 newstext"
                     >Wedding</span
@@ -499,7 +516,7 @@
               <div data-aos="fade-down"
      data-aos-anchor-placement="center-bottom"data-aos-duration="1000" class="newsCards position-relative">
                 <img class="newsImg" src="./images/event.jpg" alt="wedding" />
-                <div class="position-absolute top-0 start-0 p-2">
+                <div class="position-absolute bottom-0 start-0 p-2">
                   <span
                     class="text-uppercase text-white fw-semibold fs-4 newstext"
                     >Events</span
@@ -515,7 +532,7 @@
                   src="./images/wedding2.jpg"
                   alt="wedding"
                 />
-                <div class="position-absolute top-0 start-0 p-2">
+                <div class="position-absolute bottom-0 start-0 p-2">
                   <span
                     class="text-uppercase text-white fw-semibold fs-4 newstext"
                     >Wedding</span

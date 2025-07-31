@@ -24,8 +24,11 @@
     font-size:80px !important;
     font-weight: 700!important;
 }
-
-.featured-wedding,.about,.lets-plan-next-event{
+.about{
+    margin-top: 15%;
+    margin-bottom: 25%;
+}
+.featured-wedding,.lets-plan-next-event{
     margin-top: 15%;
     margin-bottom: 15%;
 }
@@ -72,9 +75,14 @@
     border-color: #edcffa;
 }
 
-.aboutImg{
+.aboutImg1{
     border-top-right-radius: 40px!important;
     border-bottom-left-radius: 40px!important;
+}
+.aboutImg2{
+    border-top-left-radius: 40px!important;
+    border-bottom-right-radius: 40px!important;
+    width: 40%;
 }
 .bgEffect{
     height: 100vh;
